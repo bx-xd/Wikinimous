@@ -1,0 +1,10 @@
+<div class="show">
+  <h1>
+    <%= @article.title %>
+    <small>
+      <%= link_to "Editer", edit_article_path %> <br>
+      <%= link_to "Supprimer #{@article.title}", article_path(@article), method: :delete %>
+    </small>
+  </h1>
+  <p><%= @article.content %></p>
+</div>
